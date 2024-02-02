@@ -19,8 +19,16 @@
             background-color: blue;
         }
     </style>
-    
 
+    <script>
+        $(document).ready(function(){
+            var modwidth=50;
+            $("div").click(function(){
+                $(this).width(modwidth).addClass("next");
+                modwidth-=5;
+            });
+        });
+    </script>
 
     <div>1</div>
     <div>2</div>
